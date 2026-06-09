@@ -10,6 +10,7 @@
 
 import { useEffect, useCallback, useState, useRef } from 'react';
 import { useMaquinaEscribir } from '@/hooks/useMaquinaEscribir';
+import BotonSaltarMision from './BotonSaltarMision';
 import { anunciarSR } from '@/lib/accesibilidad';
 import type { Introduccion } from '@/datos/introducciones';
 import type { TipoSonido } from '@/hooks/useSonido';
@@ -69,8 +70,7 @@ export default function DialogoComic({ introduccion, alCompletar, alSaltar, repr
   }, [escribiendo, paso, introduccion, saltarAlFinal, iniciarEscritura, reproducir, alCompletar]);
 
   /** Saltar toda la escena */
-  const manejarSaltar = useCallback((e: React.MouseEvent) => {
-    e.stopPropagation();
+  const manejarSaltar = useCallback(() => {
     limpiar();
     alSaltar();
     reproducir('clic');
@@ -126,13 +126,7 @@ export default function DialogoComic({ introduccion, alCompletar, alSaltar, repr
         </div>
 
         {/* Botón saltar */}
-        <button
-          className="comic-skip"
-          onClick={manejarSaltar}
-          aria-label="Saltar diálogo completo (Escape)"
-        >
-          Saltar <span className="px-icon px-skip" />
-        </button>
+        <BotonSaltarMision onClick={manejarSaltar} />
       </div>
     </div>
   );

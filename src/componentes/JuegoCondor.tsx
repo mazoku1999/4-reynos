@@ -15,6 +15,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import './JuegoCondor.css';
 import { useMaquinaEscribir } from '@/hooks/useMaquinaEscribir';
+import BotonSaltarMision from './BotonSaltarMision';
 import { anunciarSR } from '@/lib/accesibilidad';
 import type { TipoSonido } from '@/hooks/useSonido';
 import {
@@ -404,24 +405,9 @@ export default function JuegoCondor({ alCompletar, alCerrar, reproducir }: Props
         ))}
       </div>
 
-      {/* Close button */}
-      <button
-        className="jc-close-btn"
-        onClick={alCerrar}
-        aria-label="Cerrar y volver al mapa"
-      >
-        ✕
-      </button>
-
-      {/* Skip Intro button */}
-      {(subFase === 'intro' || subFase === 'aparicion' || subFase === 'dialogo-problema' || subFase === 'arbol-seco' || subFase === 'preguntas-reflexion') && (
-        <button
-          className="jc-skip-btn"
-          onClick={saltarIntro}
-          aria-label="Saltar intro (Escape)"
-        >
-          Saltar Intro ⏭
-        </button>
+      {/* Botón Saltar Misión */}
+      {subFase !== 'victoria' && (
+        <BotonSaltarMision onClick={subFase === 'intro' || subFase === 'aparicion' || subFase === 'dialogo-problema' || subFase === 'arbol-seco' || subFase === 'preguntas-reflexion' ? saltarIntro : alCerrar} />
       )}
 
       {/* ── Sacred Tree (CSS art) ── */}

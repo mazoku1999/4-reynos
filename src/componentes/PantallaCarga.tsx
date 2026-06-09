@@ -1,31 +1,14 @@
 'use client';
 
 /**
- * PantallaCarga — Precarga imágenes críticas y muestra progreso.
+ * PantallaCarga — Precarga TODOS los assets del juego y muestra progreso.
+ * Al cargar todo de golpe se evita lag al navegar entre reinos.
  * Accesibilidad: role="progressbar", aria-live, anuncio al completar.
  */
 
 import { useEffect, useState } from 'react';
 import { anunciarSR } from '@/lib/accesibilidad';
-
-const IMAGENES_CRITICAS = [
-  '/assets/title_banner.png',
-  '/assets/sprites_individuales/islas/islas_01.png',
-  '/assets/sprites_individuales/islas/islas_02.png',
-  '/assets/sprites_individuales/islas/islas_03.png',
-  '/assets/sprites_individuales/islas/islas_04.png',
-  '/assets/sprites_individuales/islas/islas_05.png',
-  '/assets/sprites_individuales/personajes/rey_condor.png',
-  '/assets/sprites_individuales/personajes/rey_puma_nuevo.png',
-  '/assets/sprites_individuales/personajes/rey_capibara.png',
-  '/assets/sprites_individuales/personajes/rey_quirquincho.png',
-  '/assets/sprites_individuales/personajes/rey_puma_nuevo.png',
-  '/assets/ui/forest_bg.jpg',
-  '/assets/ui/dialog_scroll.png',
-  '/assets/ui/tile_dead.png',
-  '/assets/ui/tile_alive.png',
-  '/assets/ui/cosmos_bg.jpg',
-];
+import { TODOS_LOS_ASSETS } from '@/datos/assetsPreload';
 
 interface Props {
   alCompletar: () => void;
@@ -33,12 +16,12 @@ interface Props {
 
 export default function PantallaCarga({ alCompletar }: Props) {
   const [cargadas, setCargadas] = useState(0);
-  const total = IMAGENES_CRITICAS.length;
+  const total = TODOS_LOS_ASSETS.length;
   const porcentaje = Math.round((cargadas / total) * 100);
 
   useEffect(() => {
     let cuenta = 0;
-    IMAGENES_CRITICAS.forEach(src => {
+    TODOS_LOS_ASSETS.forEach(src => {
       const img = new Image();
       img.onload = img.onerror = () => {
         cuenta++;

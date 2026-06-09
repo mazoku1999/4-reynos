@@ -13,6 +13,7 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { PROBLEMAS_MISION1, REGLA_MISION1, TEORIA_MULTIPLICACION } from '@/datos/misionesCapibara';
+import BotonSaltarMision from './BotonSaltarMision';
 import { anunciarSR } from '@/lib/accesibilidad';
 import type { TipoSonido } from '@/hooks/useSonido';
 
@@ -938,7 +939,7 @@ export default function JuegoGemas({ alCompletar, alCerrar, reproducir }: Props)
         </div>
       )}
 
-      <button className="dg-back-btn" onClick={alCerrar}>← Volver</button>
+      <BotonSaltarMision onClick={alCerrar} />
     </div>
   );
 }

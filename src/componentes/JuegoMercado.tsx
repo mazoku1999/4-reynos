@@ -17,6 +17,7 @@ import {
   REGLA_MISION2,
   TEORIA_DIVISION,
 } from '@/datos/misionesCapibara';
+import BotonSaltarMision from './BotonSaltarMision';
 import { anunciarSR } from '@/lib/accesibilidad';
 import type { TipoSonido } from '@/hooks/useSonido';
 
@@ -282,10 +283,7 @@ export default function JuegoMercado({ alCompletar, alCerrar, reproducir }: Prop
             })}
           </div>
 
-          <button className="mc-btn-volver" onClick={alCerrar}>
-            <span className="mc-px-arrow-l" aria-hidden="true" />
-            Volver
-          </button>
+          <BotonSaltarMision onClick={alCerrar} />
         </div>
       </div>
     );
@@ -369,10 +367,7 @@ export default function JuegoMercado({ alCompletar, alCerrar, reproducir }: Prop
             </div>
           )}
 
-          <button className="mc-btn-volver" onClick={() => { setFase('tablero'); setCanastaActiva(null); }}>
-            <span className="mc-px-arrow-l" aria-hidden="true" />
-            Volver al mercado
-          </button>
+          <BotonSaltarMision onClick={() => { setFase('tablero'); setCanastaActiva(null); }} />
         </div>
       </div>
     );

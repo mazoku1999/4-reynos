@@ -11,6 +11,7 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useMaquinaEscribir } from '@/hooks/useMaquinaEscribir';
+import BotonSaltarMision from './BotonSaltarMision';
 import { anunciarSR } from '@/lib/accesibilidad';
 import type { TipoSonido } from '@/hooks/useSonido';
 
@@ -310,18 +311,11 @@ export default function IntroQuirquincho({ alCompletar, alSaltar, reproducir }: 
       </div>
 
       {/* Skip button */}
-      <button
-        className="qi-skip"
-        onClick={(e) => {
-          e.stopPropagation();
-          limpiar();
-          alSaltar();
-          reproducir('clic');
-        }}
-        aria-label="Saltar introducción"
-      >
-        Saltar
-      </button>
+      <BotonSaltarMision onClick={() => {
+        limpiar();
+        alSaltar();
+        reproducir('clic');
+      }} />
     </div>
   );
 }

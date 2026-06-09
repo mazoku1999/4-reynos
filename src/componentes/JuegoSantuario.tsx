@@ -16,6 +16,7 @@ import {
   TEORIA_COMBINADAS,
   PROBLEMAS_MISION_FINAL,
 } from '@/datos/misionesCapibara';
+import BotonSaltarMision from './BotonSaltarMision';
 
 interface Props {
   alCompletar: () => void;
@@ -161,7 +162,7 @@ export default function JuegoSantuario({ alCompletar, alCerrar, reproducir }: Pr
 
         {/* Header */}
         <div className="sn-hud">
-          <button className="sn-btn-volver" onClick={alCerrar}>Volver</button>
+          <BotonSaltarMision onClick={alCerrar} />
           <div className="sn-hud-title">SANTUARIO</div>
           <div className="sn-hud-progress">
             {sellosResueltos.map((r, i) => (

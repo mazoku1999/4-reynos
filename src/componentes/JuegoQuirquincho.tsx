@@ -5,6 +5,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useMaquinaEscribir } from '@/hooks/useMaquinaEscribir';
 import ValoracionQuirquincho from './ValoracionQuirquincho';
+import BotonSaltarMision from './BotonSaltarMision';
 import { anunciarSR } from '@/lib/accesibilidad';
 import type { TipoSonido } from '@/hooks/useSonido';
 
@@ -431,49 +432,9 @@ export default function JuegoQuirquincho({ alCompletar, alCerrar, reproducir }: 
       />
       <div className="jq-bg-darkener" />
 
-      {/* Close button */}
-      <button 
-        className="jq-close-btn" 
-        onClick={alCerrar} 
-        aria-label="Cerrar y volver al mapa"
-      >
-        ✕
-      </button>
-
-      {/* Botón de Saltar Misión para debugging/testing rápido */}
+      {/* Botón Saltar Misión */}
       {subFase !== 'victoria-final' && (
-        <button
-          className="jq-skip-mission-btn"
-          onClick={saltarMision}
-          aria-label="Saltar Misión"
-          style={{
-            position: 'absolute',
-            top: 60,
-            right: 15,
-            background: 'rgba(255, 255, 255, 0.2)',
-            border: '1px solid rgba(255, 255, 255, 0.4)',
-            color: 'white',
-            padding: '8px 16px',
-            borderRadius: '20px',
-            fontFamily: 'inherit',
-            fontSize: '0.9rem',
-            fontWeight: 600,
-            cursor: 'pointer',
-            zIndex: 50,
-            backdropFilter: 'blur(4px)',
-            transition: 'all 0.2s'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          Saltar Misión ⏭
-        </button>
+        <BotonSaltarMision onClick={saltarMision} />
       )}
 
       {/* Absolute positioned Toborochi Tree Sprite (Prologue phases) */}

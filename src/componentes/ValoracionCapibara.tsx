@@ -17,6 +17,7 @@ import {
   VALORACION_CAPIBARA,
   PRODUCCION_CAPIBARA,
 } from '@/datos/misionesCapibara';
+import BotonSaltarMision from './BotonSaltarMision';
 
 interface Props {
   alCompletar: () => void;
@@ -26,7 +27,7 @@ interface Props {
 
 type Fase = 'intro' | 'preguntas' | 'produccion' | 'final';
 
-export default function ValoracionCapibara({ alCompletar, reproducir }: Props) {
+export default function ValoracionCapibara({ alCompletar, alCerrar, reproducir }: Props) {
   const [fase, setFase] = useState<Fase>('intro');
 
   const avanzar = useCallback((siguiente: Fase) => {
@@ -58,6 +59,7 @@ export default function ValoracionCapibara({ alCompletar, reproducir }: Props) {
             Continuar
           </button>
         </div>
+        <BotonSaltarMision onClick={alCerrar} />
       </div>
     );
   }
@@ -92,6 +94,7 @@ export default function ValoracionCapibara({ alCompletar, reproducir }: Props) {
             Continuar
           </button>
         </div>
+        <BotonSaltarMision onClick={alCerrar} />
       </div>
     );
   }
@@ -134,6 +137,7 @@ export default function ValoracionCapibara({ alCompletar, reproducir }: Props) {
             Continuar
           </button>
         </div>
+        <BotonSaltarMision onClick={alCerrar} />
       </div>
     );
   }
