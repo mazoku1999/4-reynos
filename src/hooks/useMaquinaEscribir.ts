@@ -7,7 +7,7 @@
 
 import { useState, useRef, useCallback } from 'react';
 
-export function useMaquinaEscribir() {
+export function useMaquinaEscribir(velocidad: number = 22) {
   const [textoVisible, setTextoVisible] = useState('');
   const [escribiendo, setEscribiendo] = useState(false);
   const temporizadorRef = useRef<NodeJS.Timeout | null>(null);
@@ -28,7 +28,7 @@ export function useMaquinaEscribir() {
         setTextoVisible(texto.slice(0, indice + 1));
         indice++;
         // Pausa natural: más lento en puntos y comas
-        const pausa = texto[indice - 1] === '.' || texto[indice - 1] === ',' ? 80 : 22;
+        const pausa = texto[indice - 1] === '.' || texto[indice - 1] === ',' ? 80 : velocidad;
         temporizadorRef.current = setTimeout(escribirLetra, pausa);
       } else {
         setEscribiendo(false);
