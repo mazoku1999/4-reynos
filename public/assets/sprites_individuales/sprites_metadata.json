@@ -1,0 +1,836 @@
+{
+  "islas": [
+    {
+      "file": "sprites_individuales/islas/islas_01.png",
+      "source_x": 71,
+      "source_y": 22,
+      "width": 633,
+      "height": 437,
+      "nontransparent_pixels": 199284
+    },
+    {
+      "file": "sprites_individuales/islas/islas_02.png",
+      "source_x": 722,
+      "source_y": 22,
+      "width": 708,
+      "height": 453,
+      "nontransparent_pixels": 232504
+    },
+    {
+      "file": "sprites_individuales/islas/islas_03.png",
+      "source_x": 781,
+      "source_y": 443,
+      "width": 632,
+      "height": 461,
+      "nontransparent_pixels": 204012
+    },
+    {
+      "file": "sprites_individuales/islas/islas_04.png",
+      "source_x": 46,
+      "source_y": 452,
+      "width": 600,
+      "height": 458,
+      "nontransparent_pixels": 191842
+    },
+    {
+      "file": "sprites_individuales/islas/islas_05.png",
+      "source_x": 506,
+      "source_y": 704,
+      "width": 417,
+      "height": 339,
+      "nontransparent_pixels": 84938
+    }
+  ],
+  "personajes": [
+    {
+      "file": "sprites_individuales/personajes/personajes_01.png",
+      "source_x": 377,
+      "source_y": 130,
+      "width": 277,
+      "height": 337,
+      "nontransparent_pixels": 55736
+    },
+    {
+      "file": "sprites_individuales/personajes/personajes_02.png",
+      "source_x": 697,
+      "source_y": 134,
+      "width": 294,
+      "height": 327,
+      "nontransparent_pixels": 58286
+    },
+    {
+      "file": "sprites_individuales/personajes/personajes_03.png",
+      "source_x": 1036,
+      "source_y": 134,
+      "width": 282,
+      "height": 395,
+      "nontransparent_pixels": 71444
+    },
+    {
+      "file": "sprites_individuales/personajes/personajes_04.png",
+      "source_x": 90,
+      "source_y": 165,
+      "width": 186,
+      "height": 278,
+      "nontransparent_pixels": 34239
+    },
+    {
+      "file": "sprites_individuales/personajes/personajes_05.png",
+      "source_x": 236,
+      "source_y": 557,
+      "width": 278,
+      "height": 361,
+      "nontransparent_pixels": 63708
+    },
+    {
+      "file": "sprites_individuales/personajes/personajes_06.png",
+      "source_x": 597,
+      "source_y": 598,
+      "width": 164,
+      "height": 261,
+      "nontransparent_pixels": 27758
+    },
+    {
+      "file": "sprites_individuales/personajes/personajes_07.png",
+      "source_x": 915,
+      "source_y": 646,
+      "width": 173,
+      "height": 235,
+      "nontransparent_pixels": 25965
+    }
+  ],
+  "entorno": [
+    {
+      "file": "sprites_individuales/entorno/entorno_01.png",
+      "source_x": 39,
+      "source_y": 68,
+      "width": 144,
+      "height": 185,
+      "nontransparent_pixels": 15586
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_02.png",
+      "source_x": 488,
+      "source_y": 70,
+      "width": 222,
+      "height": 207,
+      "nontransparent_pixels": 29933
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_03.png",
+      "source_x": 882,
+      "source_y": 42,
+      "width": 184,
+      "height": 217,
+      "nontransparent_pixels": 24909
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_04.png",
+      "source_x": 201,
+      "source_y": 99,
+      "width": 96,
+      "height": 149,
+      "nontransparent_pixels": 8126
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_05.png",
+      "source_x": 325,
+      "source_y": 148,
+      "width": 67,
+      "height": 97,
+      "nontransparent_pixels": 3751
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_06.png",
+      "source_x": 741,
+      "source_y": 118,
+      "width": 99,
+      "height": 136,
+      "nontransparent_pixels": 8724
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_07.png",
+      "source_x": 1116,
+      "source_y": 94,
+      "width": 148,
+      "height": 157,
+      "nontransparent_pixels": 14920
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_08.png",
+      "source_x": 1301,
+      "source_y": 138,
+      "width": 98,
+      "height": 110,
+      "nontransparent_pixels": 6867
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_09.png",
+      "source_x": 417,
+      "source_y": 174,
+      "width": 46,
+      "height": 69,
+      "nontransparent_pixels": 1918
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_10.png",
+      "source_x": 39,
+      "source_y": 275,
+      "width": 275,
+      "height": 210,
+      "nontransparent_pixels": 31453
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_11.png",
+      "source_x": 763,
+      "source_y": 321,
+      "width": 180,
+      "height": 171,
+      "nontransparent_pixels": 21049
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_12.png",
+      "source_x": 373,
+      "source_y": 338,
+      "width": 120,
+      "height": 144,
+      "nontransparent_pixels": 8698
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_13.png",
+      "source_x": 556,
+      "source_y": 339,
+      "width": 142,
+      "height": 150,
+      "nontransparent_pixels": 13970
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_14.png",
+      "source_x": 1009,
+      "source_y": 346,
+      "width": 129,
+      "height": 119,
+      "nontransparent_pixels": 10103
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_15.png",
+      "source_x": 1154,
+      "source_y": 380,
+      "width": 89,
+      "height": 85,
+      "nontransparent_pixels": 5154
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_16.png",
+      "source_x": 1262,
+      "source_y": 416,
+      "width": 62,
+      "height": 51,
+      "nontransparent_pixels": 2048
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_17.png",
+      "source_x": 1357,
+      "source_y": 439,
+      "width": 32,
+      "height": 24,
+      "nontransparent_pixels": 466
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_18.png",
+      "source_x": 39,
+      "source_y": 507,
+      "width": 190,
+      "height": 213,
+      "nontransparent_pixels": 25490
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_19.png",
+      "source_x": 253,
+      "source_y": 553,
+      "width": 135,
+      "height": 157,
+      "nontransparent_pixels": 13633
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_20.png",
+      "source_x": 1027,
+      "source_y": 527,
+      "width": 165,
+      "height": 191,
+      "nontransparent_pixels": 20247
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_21.png",
+      "source_x": 419,
+      "source_y": 596,
+      "width": 104,
+      "height": 111,
+      "nontransparent_pixels": 7644
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_22.png",
+      "source_x": 579,
+      "source_y": 576,
+      "width": 91,
+      "height": 130,
+      "nontransparent_pixels": 6855
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_23.png",
+      "source_x": 711,
+      "source_y": 601,
+      "width": 75,
+      "height": 105,
+      "nontransparent_pixels": 4185
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_24.png",
+      "source_x": 1264,
+      "source_y": 576,
+      "width": 82,
+      "height": 129,
+      "nontransparent_pixels": 4294
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_25.png",
+      "source_x": 824,
+      "source_y": 645,
+      "width": 53,
+      "height": 63,
+      "nontransparent_pixels": 1851
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_26.png",
+      "source_x": 924,
+      "source_y": 658,
+      "width": 48,
+      "height": 52,
+      "nontransparent_pixels": 1566
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_27.png",
+      "source_x": 224,
+      "source_y": 748,
+      "width": 154,
+      "height": 156,
+      "nontransparent_pixels": 15461
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_28.png",
+      "source_x": 50,
+      "source_y": 767,
+      "width": 136,
+      "height": 131,
+      "nontransparent_pixels": 9330
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_29.png",
+      "source_x": 406,
+      "source_y": 772,
+      "width": 66,
+      "height": 124,
+      "nontransparent_pixels": 4990
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_30.png",
+      "source_x": 498,
+      "source_y": 802,
+      "width": 62,
+      "height": 94,
+      "nontransparent_pixels": 3461
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_31.png",
+      "source_x": 585,
+      "source_y": 829,
+      "width": 59,
+      "height": 67,
+      "nontransparent_pixels": 2234
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_32.png",
+      "source_x": 673,
+      "source_y": 846,
+      "width": 87,
+      "height": 55,
+      "nontransparent_pixels": 3134
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_33.png",
+      "source_x": 781,
+      "source_y": 858,
+      "width": 106,
+      "height": 42,
+      "nontransparent_pixels": 2419
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_34.png",
+      "source_x": 915,
+      "source_y": 868,
+      "width": 84,
+      "height": 30,
+      "nontransparent_pixels": 1207
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_35.png",
+      "source_x": 1048,
+      "source_y": 838,
+      "width": 145,
+      "height": 60,
+      "nontransparent_pixels": 5970
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_36.png",
+      "source_x": 1230,
+      "source_y": 819,
+      "width": 149,
+      "height": 82,
+      "nontransparent_pixels": 8081
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_37.png",
+      "source_x": 54,
+      "source_y": 954,
+      "width": 99,
+      "height": 74,
+      "nontransparent_pixels": 4453
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_38.png",
+      "source_x": 201,
+      "source_y": 965,
+      "width": 79,
+      "height": 61,
+      "nontransparent_pixels": 3200
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_39.png",
+      "source_x": 319,
+      "source_y": 980,
+      "width": 56,
+      "height": 43,
+      "nontransparent_pixels": 1147
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_40.png",
+      "source_x": 425,
+      "source_y": 975,
+      "width": 68,
+      "height": 50,
+      "nontransparent_pixels": 1984
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_41.png",
+      "source_x": 538,
+      "source_y": 969,
+      "width": 71,
+      "height": 57,
+      "nontransparent_pixels": 2668
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_42.png",
+      "source_x": 647,
+      "source_y": 961,
+      "width": 83,
+      "height": 63,
+      "nontransparent_pixels": 2940
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_43.png",
+      "source_x": 793,
+      "source_y": 972,
+      "width": 75,
+      "height": 61,
+      "nontransparent_pixels": 2791
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_44.png",
+      "source_x": 917,
+      "source_y": 972,
+      "width": 77,
+      "height": 61,
+      "nontransparent_pixels": 3361
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_45.png",
+      "source_x": 1051,
+      "source_y": 972,
+      "width": 75,
+      "height": 61,
+      "nontransparent_pixels": 3337
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_46.png",
+      "source_x": 1182,
+      "source_y": 972,
+      "width": 75,
+      "height": 61,
+      "nontransparent_pixels": 3292
+    },
+    {
+      "file": "sprites_individuales/entorno/entorno_47.png",
+      "source_x": 1301,
+      "source_y": 951,
+      "width": 83,
+      "height": 82,
+      "nontransparent_pixels": 3795
+    }
+  ],
+  "edificios_props": [
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_01.png",
+      "source_x": 40,
+      "source_y": 50,
+      "width": 487,
+      "height": 307,
+      "nontransparent_pixels": 93920
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_02.png",
+      "source_x": 577,
+      "source_y": 77,
+      "width": 449,
+      "height": 292,
+      "nontransparent_pixels": 74615
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_03.png",
+      "source_x": 1011,
+      "source_y": 64,
+      "width": 391,
+      "height": 310,
+      "nontransparent_pixels": 64751
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_04.png",
+      "source_x": 49,
+      "source_y": 406,
+      "width": 421,
+      "height": 368,
+      "nontransparent_pixels": 108912
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_05.png",
+      "source_x": 547,
+      "source_y": 430,
+      "width": 114,
+      "height": 210,
+      "nontransparent_pixels": 10140
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_06.png",
+      "source_x": 908,
+      "source_y": 413,
+      "width": 210,
+      "height": 183,
+      "nontransparent_pixels": 26677
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_07.png",
+      "source_x": 1126,
+      "source_y": 427,
+      "width": 207,
+      "height": 186,
+      "nontransparent_pixels": 26568
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_08.png",
+      "source_x": 645,
+      "source_y": 478,
+      "width": 99,
+      "height": 129,
+      "nontransparent_pixels": 5321
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_09.png",
+      "source_x": 758,
+      "source_y": 467,
+      "width": 124,
+      "height": 159,
+      "nontransparent_pixels": 13504
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_10.png",
+      "source_x": 555,
+      "source_y": 666,
+      "width": 185,
+      "height": 185,
+      "nontransparent_pixels": 21963
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_11.png",
+      "source_x": 841,
+      "source_y": 642,
+      "width": 226,
+      "height": 176,
+      "nontransparent_pixels": 28114
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_12.png",
+      "source_x": 1059,
+      "source_y": 637,
+      "width": 142,
+      "height": 178,
+      "nontransparent_pixels": 17794
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_13.png",
+      "source_x": 1214,
+      "source_y": 634,
+      "width": 182,
+      "height": 185,
+      "nontransparent_pixels": 20745
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_14.png",
+      "source_x": 80,
+      "source_y": 862,
+      "width": 131,
+      "height": 146,
+      "nontransparent_pixels": 14556
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_15.png",
+      "source_x": 271,
+      "source_y": 869,
+      "width": 225,
+      "height": 151,
+      "nontransparent_pixels": 23066
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_16.png",
+      "source_x": 1121,
+      "source_y": 843,
+      "width": 216,
+      "height": 187,
+      "nontransparent_pixels": 25397
+    },
+    {
+      "file": "sprites_individuales/edificios_props/edificios_props_17.png",
+      "source_x": 547,
+      "source_y": 873,
+      "width": 499,
+      "height": 149,
+      "nontransparent_pixels": 54640
+    }
+  ],
+  "ui": [
+    {
+      "file": "sprites_individuales/ui/ui_01.png",
+      "source_x": 96,
+      "source_y": 29,
+      "width": 671,
+      "height": 144,
+      "nontransparent_pixels": 83090
+    },
+    {
+      "file": "sprites_individuales/ui/ui_02.png",
+      "source_x": 841,
+      "source_y": 28,
+      "width": 517,
+      "height": 134,
+      "nontransparent_pixels": 61741
+    },
+    {
+      "file": "sprites_individuales/ui/ui_03.png",
+      "source_x": 195,
+      "source_y": 169,
+      "width": 471,
+      "height": 73,
+      "nontransparent_pixels": 31326
+    },
+    {
+      "file": "sprites_individuales/ui/ui_04.png",
+      "source_x": 902,
+      "source_y": 169,
+      "width": 397,
+      "height": 74,
+      "nontransparent_pixels": 26645
+    },
+    {
+      "file": "sprites_individuales/ui/ui_05.png",
+      "source_x": 68,
+      "source_y": 248,
+      "width": 394,
+      "height": 142,
+      "nontransparent_pixels": 42921
+    },
+    {
+      "file": "sprites_individuales/ui/ui_06.png",
+      "source_x": 513,
+      "source_y": 252,
+      "width": 390,
+      "height": 139,
+      "nontransparent_pixels": 42348
+    },
+    {
+      "file": "sprites_individuales/ui/ui_07.png",
+      "source_x": 949,
+      "source_y": 271,
+      "width": 410,
+      "height": 89,
+      "nontransparent_pixels": 31244
+    },
+    {
+      "file": "sprites_individuales/ui/ui_08.png",
+      "source_x": 949,
+      "source_y": 365,
+      "width": 410,
+      "height": 91,
+      "nontransparent_pixels": 31705
+    },
+    {
+      "file": "sprites_individuales/ui/ui_09.png",
+      "source_x": 68,
+      "source_y": 393,
+      "width": 394,
+      "height": 141,
+      "nontransparent_pixels": 43343
+    },
+    {
+      "file": "sprites_individuales/ui/ui_10.png",
+      "source_x": 513,
+      "source_y": 396,
+      "width": 389,
+      "height": 141,
+      "nontransparent_pixels": 43015
+    },
+    {
+      "file": "sprites_individuales/ui/ui_11.png",
+      "source_x": 949,
+      "source_y": 462,
+      "width": 409,
+      "height": 89,
+      "nontransparent_pixels": 31257
+    },
+    {
+      "file": "sprites_individuales/ui/ui_12.png",
+      "source_x": 512,
+      "source_y": 565,
+      "width": 370,
+      "height": 139,
+      "nontransparent_pixels": 39883
+    },
+    {
+      "file": "sprites_individuales/ui/ui_13.png",
+      "source_x": 949,
+      "source_y": 557,
+      "width": 410,
+      "height": 90,
+      "nontransparent_pixels": 31637
+    },
+    {
+      "file": "sprites_individuales/ui/ui_14.png",
+      "source_x": 66,
+      "source_y": 573,
+      "width": 354,
+      "height": 326,
+      "nontransparent_pixels": 110708
+    },
+    {
+      "file": "sprites_individuales/ui/ui_15.png",
+      "source_x": 945,
+      "source_y": 672,
+      "width": 427,
+      "height": 235,
+      "nontransparent_pixels": 92381
+    },
+    {
+      "file": "sprites_individuales/ui/ui_16.png",
+      "source_x": 446,
+      "source_y": 747,
+      "width": 100,
+      "height": 101,
+      "nontransparent_pixels": 5813
+    },
+    {
+      "file": "sprites_individuales/ui/ui_17.png",
+      "source_x": 569,
+      "source_y": 744,
+      "width": 110,
+      "height": 104,
+      "nontransparent_pixels": 8288
+    },
+    {
+      "file": "sprites_individuales/ui/ui_18.png",
+      "source_x": 825,
+      "source_y": 748,
+      "width": 94,
+      "height": 100,
+      "nontransparent_pixels": 6953
+    },
+    {
+      "file": "sprites_individuales/ui/ui_19.png",
+      "source_x": 703,
+      "source_y": 752,
+      "width": 99,
+      "height": 92,
+      "nontransparent_pixels": 7594
+    },
+    {
+      "file": "sprites_individuales/ui/ui_20.png",
+      "source_x": 46,
+      "source_y": 940,
+      "width": 155,
+      "height": 105,
+      "nontransparent_pixels": 13862
+    },
+    {
+      "file": "sprites_individuales/ui/ui_21.png",
+      "source_x": 222,
+      "source_y": 940,
+      "width": 145,
+      "height": 105,
+      "nontransparent_pixels": 12926
+    },
+    {
+      "file": "sprites_individuales/ui/ui_22.png",
+      "source_x": 386,
+      "source_y": 941,
+      "width": 149,
+      "height": 104,
+      "nontransparent_pixels": 13360
+    },
+    {
+      "file": "sprites_individuales/ui/ui_23.png",
+      "source_x": 552,
+      "source_y": 941,
+      "width": 174,
+      "height": 104,
+      "nontransparent_pixels": 15512
+    },
+    {
+      "file": "sprites_individuales/ui/ui_24.png",
+      "source_x": 744,
+      "source_y": 941,
+      "width": 157,
+      "height": 103,
+      "nontransparent_pixels": 13864
+    },
+    {
+      "file": "sprites_individuales/ui/ui_25.png",
+      "source_x": 921,
+      "source_y": 940,
+      "width": 150,
+      "height": 105,
+      "nontransparent_pixels": 13288
+    },
+    {
+      "file": "sprites_individuales/ui/ui_26.png",
+      "source_x": 1087,
+      "source_y": 940,
+      "width": 146,
+      "height": 105,
+      "nontransparent_pixels": 12976
+    },
+    {
+      "file": "sprites_individuales/ui/ui_27.png",
+      "source_x": 1249,
+      "source_y": 940,
+      "width": 149,
+      "height": 105,
+      "nontransparent_pixels": 13362
+    }
+  ]
+}

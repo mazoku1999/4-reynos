@@ -1,0 +1,82 @@
+/* Overrides para usar las imágenes generadas como fondos y sprites */
+
+/* Sobrescribir los gradientes con las imágenes del árbol */
+.jc-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+.jc-bg-stage-0 {
+  background-image: url('/assets/condor/arbol_seco_bg.png');
+}
+.jc-bg-stage-1 {
+  background-image: url('/assets/condor/arbol_brotando_bg.png');
+}
+.jc-bg-stage-2 {
+  background-image: url('/assets/condor/arbol_creciendo_bg.png');
+}
+.jc-bg-stage-3 {
+  background-image: url('/assets/condor/arbol_florecido_bg.png');
+}
+
+/* Ocultar el árbol CSS (ya viene en el fondo) pero mantener el contenedor para las hojas */
+.jc-tree-trunk, .jc-tree-branch, .jc-tree-crown, .jc-tree-glow {
+  display: none !important;
+}
+
+/* Estilos para las hojas renderizadas como imágenes */
+.jc-leaf-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  transition: transform 0.2s;
+}
+
+.jc-leaf-card-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jc-question-leaf-emoji .jc-leaf-img {
+  width: 64px;
+  height: 64px;
+}
+
+.jc-leaf-flying .jc-leaf-img {
+  width: 40px;
+  height: 40px;
+  animation: jc-spin-fly 1.5s linear infinite;
+}
+
+@keyframes jc-spin-fly {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Botón Saltar Intro */
+.jc-skip-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 50;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s;
+}
+
+.jc-skip-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
