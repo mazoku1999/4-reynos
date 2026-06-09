@@ -1,6 +1,6 @@
 /**
  * assetsPreload.ts — Lista completa de todos los assets del juego.
- * Se usa en PantallaCarga para precargar TODAS las imágenes
+ * Se usa en PantallaCarga para precargar TODAS las imágenes y audio
  * y evitar lag al navegar entre reinos.
  */
 
@@ -169,7 +169,10 @@ const ASSETS_PUMA = [
   '/assets/parcelas/viva_8.png',
 ];
 
-/** Todos los assets combinados */
+/** Música de fondo del mapa */
+export const MUSICA_MAPA = '/assets/musica/Telef%C3%A9rico_del_Sol.mp3';
+
+/** Todos los assets de imágenes combinados */
 export const TODOS_LOS_ASSETS: string[] = [
   ...ASSETS_GLOBALES,
   ...ASSETS_QUIRQUINCHO,

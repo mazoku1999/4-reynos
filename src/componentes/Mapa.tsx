@@ -8,7 +8,9 @@
  * focus-visible, keyboard navigation, scroll-snap mobile.
  */
 
+import { useEffect, useRef } from 'react';
 import { REINOS, POSICIONES_ISLAS } from '@/datos/reinos';
+import { MUSICA_MAPA } from '@/datos/assetsPreload';
 import CanvasPuentes from './CanvasPuentes';
 
 interface Props {
@@ -19,6 +21,41 @@ interface Props {
 
 export default function Mapa({ activa, reinosCompletados, alSeleccionarReino }: Props) {
   const todosCompletos = reinosCompletados.length === 4;
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Play/pause music based on map visibility
+  useEffect(() => {
+    if (!audioRef.current) {
+      const audio = new Audio(MUSICA_MAPA);
+      audio.loop = true;
+      audio.volume = 0.35;
+      audioRef.current = audio;
+    }
+
+    const audio = audioRef.current;
+
+    if (activa) {
+      // Browsers require user interaction before play — catch and ignore
+      audio.play().catch(() => {});
+    } else {
+      audio.pause();
+    }
+
+    return () => {
+      // Cleanup only on unmount
+    };
+  }, [activa]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.src = '';
+        audioRef.current = null;
+      }
+    };
+  }, []);
 
   return (
     <section

@@ -3878,6 +3878,60 @@ img {
   }
 }
 
+/* ── Video Interlude Overlay ── */
+.jq-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(5, 8, 18, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  animation: jq-video-fadein 0.5s ease-out;
+}
+@keyframes jq-video-fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.jq-video-container {
+  position: relative;
+  max-width: 80vw;
+  max-height: 70vh;
+  border: 3px solid rgba(240, 192, 64, 0.4);
+  box-shadow:
+    0 0 30px rgba(240, 192, 64, 0.15),
+    0 8px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* Pixel art staircase corners */
+  clip-path: polygon(
+    6px 0%, calc(100% - 6px) 0%,
+    calc(100% - 3px) 3px, 100% 6px,
+    100% calc(100% - 6px), calc(100% - 3px) calc(100% - 3px),
+    calc(100% - 6px) 100%, 6px 100%,
+    3px calc(100% - 3px), 0% calc(100% - 6px),
+    0% 6px, 3px 3px
+  );
+}
+.jq-video-player {
+  display: block;
+  max-width: 80vw;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+}
+.jq-video-skip-hint {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: rgba(240, 192, 64, 0.4);
+  letter-spacing: 2px;
+  animation: triPulse 1.5s ease-in-out infinite;
+}
+
 /* ──────────────────────────────────────────────────────── */
 /* ── Juego Quirquincho Gameplay (Completar Pergamino) ── */
 /* ──────────────────────────────────────────────────────── */

@@ -8,7 +8,7 @@
 
 import { useEffect, useState } from 'react';
 import { anunciarSR } from '@/lib/accesibilidad';
-import { TODOS_LOS_ASSETS } from '@/datos/assetsPreload';
+import { TODOS_LOS_ASSETS, MUSICA_MAPA } from '@/datos/assetsPreload';
 
 interface Props {
   alCompletar: () => void;
@@ -16,23 +16,33 @@ interface Props {
 
 export default function PantallaCarga({ alCompletar }: Props) {
   const [cargadas, setCargadas] = useState(0);
-  const total = TODOS_LOS_ASSETS.length;
+  const total = TODOS_LOS_ASSETS.length + 1; // +1 for audio
   const porcentaje = Math.round((cargadas / total) * 100);
 
   useEffect(() => {
     let cuenta = 0;
+    const marcar = () => {
+      cuenta++;
+      setCargadas(cuenta);
+      if (cuenta >= total) {
+        anunciarSR('Carga completa. El juego está listo.');
+        setTimeout(alCompletar, 400);
+      }
+    };
+
+    // Preload images
     TODOS_LOS_ASSETS.forEach(src => {
       const img = new Image();
-      img.onload = img.onerror = () => {
-        cuenta++;
-        setCargadas(cuenta);
-        if (cuenta >= total) {
-          anunciarSR('Carga completa. El juego está listo.');
-          setTimeout(alCompletar, 400);
-        }
-      };
+      img.onload = img.onerror = marcar;
       img.src = src;
     });
+
+    // Preload background music
+    const audio = new Audio();
+    audio.preload = 'auto';
+    audio.oncanplaythrough = marcar;
+    audio.onerror = marcar;
+    audio.src = MUSICA_MAPA;
   }, [alCompletar, total]);
 
   return (

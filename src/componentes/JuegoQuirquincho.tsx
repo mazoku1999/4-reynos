@@ -21,10 +21,13 @@ type SubFase =
   | 'dialogo-1' 
   | 'pregunta-guardian' 
   | 'dialogo-2'
+  | 'video'
   | 'leyenda-intro'
   | 'leyenda-part'
   | 'leyenda-feedback'
   | 'victoria-final';
+
+const VIDEO_SRC = '/assets/video/WhatsApp Video 2026-06-08 at 18.25.33.mp4';
 
 interface DialogoStep {
   texto: string;
@@ -204,8 +207,10 @@ export default function JuegoQuirquincho({ alCompletar, alCerrar, reproducir }: 
       if (dialogIdx < DIALOGOS_2.length - 1) {
         setDialogIdx(dialogIdx + 1);
       } else {
-        setSubFase('leyenda-intro');
+        setSubFase('video');
       }
+    } else if (subFase === 'video') {
+      setSubFase('leyenda-intro');
     } else if (subFase === 'leyenda-intro') {
       iniciarParte(0);
     } else if (subFase === 'leyenda-feedback') {
@@ -526,6 +531,25 @@ export default function JuegoQuirquincho({ alCompletar, alCerrar, reproducir }: 
                 </button>
               </div>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* Video interlude — after dialogo-2, before leyenda */}
+      {subFase === 'video' && (
+        <div className="jq-video-overlay" onClick={avanzar}>
+          <div className="jq-video-container">
+            <video
+              src={VIDEO_SRC}
+              className="jq-video-player"
+              autoPlay
+              playsInline
+              onEnded={() => { setSubFase('leyenda-intro'); }}
+              controls={false}
+            />
+          </div>
+          <div className="jq-video-skip-hint">
+            Toca para saltar
           </div>
         </div>
       )}
